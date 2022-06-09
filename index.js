@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import usersRoutes from './routes/users.js';
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 
@@ -14,4 +14,4 @@ app.get('/',(req,res)=>{
     res.send('Hello From API')
 });
 
-app.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}`));
+app.listen(port, () => console.log(`Server is running on port http://localhost:${PORT}`));
