@@ -14,4 +14,4 @@ app.get('/',(req,res)=>{
     res.send('Hello From API')
 });
 
-app.listen(port, () => console.log(`Server is running on port http://localhost:${PORT}`));
+app.listen(port, () => console.log(`Server is running on port http://localhost:${port}`));
